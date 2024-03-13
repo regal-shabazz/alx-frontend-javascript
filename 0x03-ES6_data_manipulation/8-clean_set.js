@@ -1,4 +1,8 @@
 export default function cleanSet(set, startString) {
+  if (startString === '') {
+    return '';
+  }
+
   let resultString = '';
 
   for (const item of set) {
